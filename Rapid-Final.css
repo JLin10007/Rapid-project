@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');/*Using roboto Font*/
+
+
+*{/*Main CSS*/
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    height: 3000px;
+    margin: 0; /*Margin use for setup the body content no spacing on left and right side*/
+}
+
+.first-bar{
+    display: grid;/*Using Grid*/
+    grid-template-columns: 25% 25% 50%;/*Using percentage to setup for any screen size*/
+    background-color: grey;
+    margin: 0;
+    height: 40px;
+    position: fixed;
+    top:0;/*Cuz using Fixed position then top,left,right no spacing*/
+    left:0;
+    right:0;
+    padding-top: 5px;
+    font-size: 18px;
+    z-index: 1000;
+}
+
+.handphone{
+    text-align: right;
+}
+
+.email{
+    text-align: center;
+}
+
+.icon{
+    text-align: center;
+}
+.icon a{/*class icon part*/
+    color: white;
+    text-decoration: none;/*make the link not underline*/
+    padding-left: 10px;
+}
+
+.Header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width:100%;
+    height: 150px;
+    position: fixed;
+    background-color:white;
+    left: 0;/*only the position are fixed using left,right,top,bottom*/
+    right: 0;
+    top: 40px;/*cuz the first bar height are 30px then make sure not affect the first bar*/
+    z-index: 1000;
+}
+
+
+.logo img{
+    width: 18%;
+    height: 100%;
+    padding-left: 40%;
+}
+
+
+.Menu{
+    padding-top:50px;
+}
+.Menu a{ /*For menu button*/
+    color: grey;
+    text-decoration: none;/*make it no underline*/
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 40px;/*padding for button have a more spacing*/
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Menu a:hover{
+    background-color: lightgray;
+}
+
+.homepage-banner{
+    width:100%;
+    height: 844px;
+    margin-top:220px;
+    background-image: url(HHeng.png);
+    background-position: bottom;
+    
+} 
+
+.Tabs-nav-bar{
+    position: relative;
+    margin: 65px 10px 40px 10px;
+}
+
+.Tabs-navigation{
+    position: relative;
+    display: flex;/*flex container*/
+    justify-content: center;/*Only flex and grid can use*/
+    align-items: center;/*Only flex and grid can use*/
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+section{
+    position: relative;
+    margin:0 80px;
+    transition: 0.5ms ease;
+}
+
+.Category-bar{
+    position: relative;
+}
+
+.Tab-menu{ /*Tabs menu*/
+    list-style: none;
+    color: brown;
+    background-color: grey;
+    max-width: 800px;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    border-radius: 50px;
+    box-shadow: 0 5px 25px (rgb(2,2,2,0.1));
+}
+
+.Tab-btn{/*Tabs button*/
+    color: white;
+    display: inline-block;/*change to horizontal*/
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 2px;
+    padding:10px 20px;
+    border-radius: 30px;
+    cursor: pointer;/*Make it like button can click*/
+    user-select: none;/*make it not available*/
+    transition: 0.3ms ease;
+}
+
+.Tab-btn:hover{
+    background-color: rgb(88, 88, 106);
+}
+
+.Tab-btn.active{
+    background-color: rgb(0, 0, 255);
+}
