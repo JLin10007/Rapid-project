@@ -168,3 +168,70 @@ section{
 .Tab-btn.active{
     background-color: rgb(0, 0, 255);
 }
+
+.Tab-content{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.Tabs{
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: auto;
+    max-width: 1100px;
+    padding:15px 50px;
+    transform: translateX(25px);
+    content-visibility: hidden;
+    opacity: 0;
+}
+
+.Tabs.active{
+    transform: translateX(0);
+    content-visibility: visible;
+    opacity: 1;
+    transition: 1s ease;
+}
+
+.Tabs .row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px 0 ;
+    gap: 30px;
+}
+
+.Tabs .Products-image{
+    position: relative;
+    width: 500px;
+    max-width: 600px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow:10px 10px 5px lightgray;
+}
+
+.Tabs .Products-image img{
+    width: 100%;
+}
+
+.right-column{
+    width: 800px;
+}
+
+.herbs-information .Herbs-Name, .herbs-information .Herbs-Description p{
+    color: #1877f2;
+    margin-bottom: 10px;
+}
+
+.herbs-information .Herbs-Name{
+    font-size: 2em;
+}
