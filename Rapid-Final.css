@@ -39,21 +39,28 @@ body{
     text-align: center;
 }
 
+.icon-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
 .custom-icon{
     font-size: 25px;
     padding-left: 15px;
     transition: 0.3 ease;
 }
 
-.facebook{
-    color: #1877f2;
+.facebook_link{
+    color: black;
 }
 .facebook_link:hover{
     color: white;
 }
 
 .youtube_link{
-    color: #ff0000;
+    color: black;
 }
 .youtube_link:hover{
     color: white;
@@ -109,7 +116,7 @@ body{
 .Category{
     font-size: 40px;
     text-align: center; 
-    color: blue;
+    color: black;
     margin-top: 80px;
 }
 
@@ -140,33 +147,34 @@ section{
 .Tab-menu{ /*Tabs menu*/
     list-style: none;
     color: brown;
-    background-color: grey;
+    background-color:white;
     max-width: 800px;
     padding: 10px;
-    border-bottom: 1px solid grey;
-    border-radius: 50px;
+    border: 1px solid grey;
+    border-radius: 10px;
     box-shadow: 0 5px 25px (rgb(2,2,2,0.1));
 }
 
 .Tab-btn{/*Tabs button*/
-    color: white;
+    color: black;
     display: inline-block;/*change to horizontal*/
     font-weight: 400;
     font-size: 18px;
     margin: 0 2px;
     padding:10px 20px;
-    border-radius: 30px;
+    border-radius: 10px;
     cursor: pointer;/*Make it like button can click*/
     user-select: none;/*make it not available*/
     transition: 0.3ms ease;
 }
 
 .Tab-btn:hover{
-    background-color: rgb(88, 88, 106);
+    background-color: lightgrey;
+    color: rgb(0, 119, 255);
 }
 
 .Tab-btn.active{
-    background-color: rgb(0, 0, 255);
+    background-color: lightblue;
 }
 
 .Tab-content{
@@ -234,4 +242,125 @@ section{
 
 .herbs-information .Herbs-Name{
     font-size: 2em;
+}
+
+.test_container{
+    margin-top: 500px;
+    margin-left: 0px;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: RGB(221, 243, 250);
+
+}
+.testimonial{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding:50px 0px ;
+    row-gap: 30px;
+}
+
+.testimonial .testimonial-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testimonial-slide p{
+    padding:0 100px;
+    text-align: center;
+    font-size:14px;
+    color: #333;
+}
+
+.testimonial-slide{
+
+}
+
+#news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding :40px;
+    border-bottom: 1px solid rgb(0,0,0,0.05);
+}
+
+.latest-news{
+    font-size: 40px;
+    text-align: center;
+}
+
+.news-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.news-box{
+    width: 350px;
+    border:1px solid #ececec;
+    margin: 20px;
+}
+
+.news-img{
+    width: 100%;
+    height: auto;
+}
+
+.news-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.news-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-text span{
+    font-size: 0.9rem;
+}
+
+.news-text a{
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+}
+
+.news-text a:hover{
+    color: grey;
+    transition: all ease 0.3s;
+}
+
+.news-text p{
+    color: #9c9c9c;
+    font-size: 0,9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+
+}
+
+.new-btn{
+    color: black;
+}
+
+.new-btn:hover{
+    color: grey;
+    transition: all ease 0.3s;
 }
