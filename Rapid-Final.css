@@ -68,7 +68,7 @@ body{
 
 .Header{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     width:100%;
     height: auto;
     position: fixed;
@@ -81,7 +81,7 @@ body{
 
 
 .logo img{
-    width: 18%;
+    width: 25%;
     height: 100%;
     padding-left: 40%;
 }
@@ -507,4 +507,113 @@ section{
 .new-btn:hover{
     color: grey;
     transition: all ease 0.3s;
+}
+
+.footer{
+    height: 500px;
+    background-color: grey;
+    width: 100%;
+    margin-left: 0;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: left;
+    padding-top: 150px;
+}
+
+.footer-container .first-column img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 25px;
+}
+.first-column{
+    padding-left: 150px;
+}
+.second-column{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.third-column{
+    padding-top: 50px;
+    padding-left: 30px;
+}
+.fourth-column{
+    padding-top: 50px;
+    padding-left: 30px;
+}
+.footer-container p {
+    margin-bottom: 15px; /* Adds spacing between each line */
+    color: white;        /* Optional: set text color if needed */
+}
+
+/* Optional: improve spacing between sections too */
+.footer-container h2 {
+    margin-bottom: 35px; /* Adds spacing between heading and items */
+    color: white;        /* Optional: for dark backgrounds */
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* optional spacing */
+}
+
+.address i {
+    margin-right: 10px; /* spacing between icon and text */
+    font-size: 18px;    /* adjust as needed */
+    color: white;       /* optional */
+}
+
+.address p {
+    margin: 0;          /* remove default spacing */
+    color: white;       /* optional */
+    margin-bottom: 10px; 
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* optional spacing */
+}
+
+.phone i {
+    margin-right: 10px; /* spacing between icon and text */
+    font-size: 18px;    /* adjust as needed */
+    color: white;       /* optional */
+}
+
+.phone p {
+    margin: 0;          /* remove default spacing */
+    color: white;       /* optional */
+    margin-bottom: 10px; 
+}
+
+.Mails {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* optional spacing */
+}
+
+.Mails i {
+    margin-right: 10px; /* spacing between icon and text */
+    font-size: 18px;    /* adjust as needed */
+    color: white;       /* optional */
+}
+
+.Mails p {
+    margin: 0;          /* remove default spacing */
+    color: white;       /* optional */
+}
+
+.Copyright{
+    text-align: center;
+    background-color: grey;
+    border-top: white 1px solid;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
