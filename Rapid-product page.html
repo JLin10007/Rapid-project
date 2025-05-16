@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Herba Hoong Heng</title><!--Page Title-->
+
+        <link rel="stylesheet" href="Rapid-Final.css"><!--Linked with CSS-->
+        <link rel="stylesheet" href="Rapid-product page css.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><!--for icon -->
+    </head>
+    <body>
+        <div class = "first-bar">
+
+            <div class="handphone">+03-320-9900</div>
+            <div class="email">example@gmail.com</div>
+            <div class = "icon">
+                <a href="https://www.facebook.com/profile.php?id=100049612574933" class="facebook_link" target="_blank">
+                    <i class="fa-brands fa-facebook custom-icon"></i></a>
+                <a href="https://www.youtube.com/@YANGSOKHOONG" class="youtube_link" target="_blank">
+                    <i class="fa-brands fa-youtube custom-icon"></i></a>
+            </div>       
+        </div>
+    
+        <div class = "Header">
+            <div class = "logo">
+                <a href="file:///C:/Users/jingl/OneDrive/Desktop/Rapid%20project/Rapid%20project/Rapid-Final.html"><img src="HH-removebg-preview.png" ></a>
+            </div>
+
+            <div class = "Menu">
+                <a href="">HomePage</a>
+                <a href="">About Us</a>
+                <a href="">Product</a>
+                <a href="">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="hero-banner">
+            <div class="hero-text">
+                <h1>Product</h1>
+            </div>
+        </div>
+   <div class="container">
+    <aside class="sidebar">
+      <h2>Category</h2>
+      <ul>
+        <li>Bandage</li>
+        <li>Capsules</li>
+        <li>Digital Thermometer</li>
+        <li>Eat Thermometer</li>
+        <li>First Aid</li>
+        <li>Medicine</li>
+        <li>Pedometer</li>
+        <li>Pharmacies</li>
+        <li>Pills</li>
+        <li>Safety Kit</li>
+        <li>Support Stick</li>
+      </ul>
+    </aside>
+
+    <div class="products">
+         <div class="product-card" onclick="showProductDetails(this, 'Face Mask', 'This is a high-quality face mask. It is used for protection against dust and allergens. It is available in different sizes and can be purchased in bulk.')">
+            <img src="facemask.jpg">
+            <p class="product-name">Face Mask</p>
+        </div>
+        <div class="product-card">
+            <img src="facemask.jpg">
+            <p class="product-name">Face Mask</p>
+        </div>
+        <div class="product-card">
+            <img src="facemask.jpg">
+            <p class="product-name">Face Mask</p>
+        </div>
+        <div class="product-card">
+            <img src="facemask.jpg">
+            <p class="product-name">Face Mask</p>
+        </div>
+        <div class="product-card">
+            <img src="facemask.jpg">
+            <p class="product-name">Face Mask</p>
+        </div>
+        <div class="product-card">
+            <img src="facemask.jpg">
+            <p class="product-name">Face Mask</p>
+        </div>
+        <div class="product-card">
+            <img src="facemask.jpg">
+            <p class="product-name">Face Mask</p>
+        </div>
+        <div class="product-card">
+            <img src="facemask.jpg">
+            <p class="product-name">Face Mask</p>
+        </div>
+    </div>
+         <script>
+        function showProductDetails(card, name, description) {
+            // Hide all product cards
+            const allCards = document.querySelectorAll('.product-card');
+            allCards.forEach(item => {
+                if (item !== card) {
+                    item.classList.add('hide');
+                } else {
+                    item.classList.add('expanded');
+                    item.innerHTML = `<h2>${name}</h2><p class="product-details">${description}</p>`;
+                }
+            });
+        }
+    </script>
+
+        </body>
+
+</html>
