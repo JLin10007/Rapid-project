@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');/*Using roboto Font*/
+
+
+*{/*Main CSS*/
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    height: fit-content;
+    margin: 0; /*Margin use for setup the body content no spacing on left and right side*/
+}
+
+.first-bar{
+    display: grid;/*Using Grid*/
+    grid-template-columns: 25% 25% 50%;/*Using percentage to setup for any screen size*/
+    background-color: grey;
+    margin: 0;
+    height: 40px;
+    position: fixed;
+    top:0;/*Cuz using Fixed position then top,left,right no spacing*/
+    left:0;
+    right:0;
+    padding-top: 10px;
+    font-size: 18px;
+    z-index: 1000;
+}
+
+.handphone{
+    text-align: right;
+}
+
+.email{
+    text-align: center;
+}
+
+.icon{
+    text-align: center;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.custom-icon{
+    font-size: 25px;
+    padding-left: 15px;
+    transition: 0.3 ease;
+}
+
+.facebook_link{
+    color: black;
+}
+.facebook_link:hover{
+    color: white;
+}
+
+.youtube_link{
+    color: black;
+}
+.youtube_link:hover{
+    color: white;
+}
+
+.Header{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width:100%;
+    height: auto;
+    position: fixed;
+    background-color:white;
+    left: 0;/*only the position are fixed using left,right,top,bottom*/
+    right: 0;
+    top: 40px;/*cuz the first bar height are 30px then make sure not affect the first bar*/
+    z-index: 1000;
+}
+
+
+.logo img{
+    width: 25%;
+    height: 100%;
+    padding-left: 40%;
+}
+
+
+.Menu{
+    padding-top:50px;
+}
+.Menu a{ /*For menu button*/
+    color: grey;
+    text-decoration: none;/*make it no underline*/
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 40px;/*padding for button have a more spacing*/
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Menu a:hover{
+    background-color: lightgray;
+}
+
+.hero-banner {
+  margin-bottom: 30px;
+  width:100%;
+  background-image: url('nezha-six-arms-thumb.jpg'); /* 🟡 Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  color: white;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+.hero-text {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+}
+.hero-text h1 {
+    font-size: 3rem; /* adjust the font size */
+    margin-top: 190px;
+}
+.container {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.blog-content{
+    margin-bottom: 100px;
+}
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+  border-bottom: 1px dotted #ccc;
+  color: #333;
+  cursor: pointer;
+}
+
+
+.sidebar h2 {
+  background-color: #0d6efd;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.news-container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.news-box{
+    width: 300px;
+    border:1px solid #ececec;
+    margin: 20px;
+}
+
+.news-img{
+    width: 100%;
+    height: auto;
+}
+
+.news-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.news-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-text span{
+    font-size: 0.9rem;
+}
+
+.news-text a{
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+}
+
+.news-text a:hover{
+    color: grey;
+    transition: all ease 0.3s;
+}
+
+.news-text p{
+    color: #9c9c9c;
+    font-size: 0,9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+
+}
+
+.new-btn{
+    color: black;
+}
+
+.new-btn:hover{
+    color: grey;
+    transition: all ease 0.3s;
+}
+
+.footer{
+    height: 500px;
+    background-color: grey;
+    width: 100%;
+    margin-left: 0;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: left;
+    padding-top: 150px;
+}
+
+.footer-container .first-column img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 25px;
+}
+.first-column{
+    padding-left: 150px;
+}
+.second-column{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.third-column{
+    padding-top: 50px;
+    padding-left: 30px;
+}
+.fourth-column{
+    padding-top: 50px;
+    padding-left: 30px;
+}
+.footer-container p {
+    margin-bottom: 15px; /* Adds spacing between each line */
+    color: white;        /* Optional: set text color if needed */
+}
+
+/* Optional: improve spacing between sections too */
+.footer-container h2 {
+    margin-bottom: 35px; /* Adds spacing between heading and items */
+    color: white;        /* Optional: for dark backgrounds */
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* optional spacing */
+}
+
+.address i {
+    margin-right: 10px; /* spacing between icon and text */
+    font-size: 18px;    /* adjust as needed */
+    color: white;       /* optional */
+}
+
+.address p {
+    margin: 0;          /* remove default spacing */
+    color: white;       /* optional */
+    margin-bottom: 10px; 
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* optional spacing */
+}
+
+.phone i {
+    margin-right: 10px; /* spacing between icon and text */
+    font-size: 18px;    /* adjust as needed */
+    color: white;       /* optional */
+}
+
+.phone p {
+    margin: 0;          /* remove default spacing */
+    color: white;       /* optional */
+    margin-bottom: 10px; 
+}
+
+.Mails {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* optional spacing */
+}
+
+.Mails i {
+    margin-right: 10px; /* spacing between icon and text */
+    font-size: 18px;    /* adjust as needed */
+    color: white;       /* optional */
+}
+
+.Mails p {
+    margin: 0;          /* remove default spacing */
+    color: white;       /* optional */
+}
+
+.Copyright{
+    text-align: center;
+    background-color: grey;
+    border-top: white 1px solid;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -58,6 +58,7 @@
     </aside>
 
     <div class="products">
+<<<<<<< HEAD
          <div class="product-card">
             <p class="product-name">Face Mask</p>
             <a href="details.html?id=1"><img src="facemask.jpg"></a>
@@ -100,6 +101,55 @@
     </div>
     
     
+=======
+         <div class="product-card" onclick="showProductDetails(this, 'Face Mask', 'This is a high-quality face mask. It is used for protection against dust and allergens. It is available in different sizes and can be purchased in bulk.')">
+            <img src="facemask.jpg">
+            <p class="product-name">Face Mask</p>
+        </div>
+        <div class="product-card">
+            <img src="facemask.jpg">
+            <p class="product-name">Face Mask</p>
+        </div>
+        <div class="product-card">
+            <img src="facemask.jpg">
+            <p class="product-name">Face Mask</p>
+        </div>
+        <div class="product-card">
+            <img src="facemask.jpg">
+            <p class="product-name">Face Mask</p>
+        </div>
+        <div class="product-card">
+            <img src="facemask.jpg">
+            <p class="product-name">Face Mask</p>
+        </div>
+        <div class="product-card">
+            <img src="facemask.jpg">
+            <p class="product-name">Face Mask</p>
+        </div>
+        <div class="product-card">
+            <img src="facemask.jpg">
+            <p class="product-name">Face Mask</p>
+        </div>
+        <div class="product-card">
+            <img src="facemask.jpg">
+            <p class="product-name">Face Mask</p>
+        </div>
+    </div>
+         <script>
+        function showProductDetails(card, name, description) {
+            // Hide all product cards
+            const allCards = document.querySelectorAll('.product-card');
+            allCards.forEach(item => {
+                if (item !== card) {
+                    item.classList.add('hide');
+                } else {
+                    item.classList.add('expanded');
+                    item.innerHTML = `<h2>${name}</h2><p class="product-details">${description}</p>`;
+                }
+            });
+        }
+    </script>
+>>>>>>> 26c09ed02436fe767286ec87123390b6f1e197da
 
         </body>
 
